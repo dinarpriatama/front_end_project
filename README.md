@@ -1,7 +1,4 @@
-The goal of this project is to teach how to create a structured, single-page CV using only HTML. 
-This HTML will focus on laying out my education, skills, career history, etc in a clean, semantic manner. 
-Styling will be addressed in a later project.
-
 https://roadmap.sh/projects/single-page-cv
-
+01. Single Page CV (HTML Only)
 https://github.com/dinarpriatama/front_end_project/tree/master/01%20Single_Page_CV 
+![image](https://github.com/user-attachments/assets/c6ab0410-904c-4594-9304-ee39e1647ad2)
