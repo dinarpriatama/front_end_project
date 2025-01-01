@@ -14,40 +14,79 @@
     <meta property="og:title" content="Dinar Priatama Contact" />
     <meta property="og:description" content="How to contact me and get in touch" />
     
-    <!-- Icon -->
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
 </head>
 
 <body>
-    <header>
-        <h1>How to Contact Me</h1>
-        <nav>
-            <ul>
-                <li><a href = "homepage.html"> Homepage </a></li>
-                <li><a href = "article.html"> Article </a></li>
-                <li><a href = "project.html"> Sample Project</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section>
-        <p>
-            <i class="bi bi-telephone"></i> : +62 58175401218
-        </p>
-        <p>
-            <i class="bi bi-telegram"></i> : +62 58175401218
-        </p>
-        <p>
-            <a href="https://www.instagram.com/nama_akun_anda" target="_blank"style="text-decoration: none;" >
-            <i class="bi bi-instagram"> : dinarpriatama</i>
-            </a>
-        </p>
-        <p>
-            <i class="bi bi-house"></i> : Jalanin Aja Dulu. Indonesia
-        </p>
-        <p>
-            <i class="bi bi-envelope-at"></i> : dinar@gmail.com
-        </p>
-    </section>
+    <div class="container">
+        <header>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="./homepage.html">
+                        <i class="bi bi-cup-hot-fill"> Dinar Priatama</i> 
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./homepage.html">Homepage</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./article.html">Article</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./project.html">Project</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </div>
+    
+    <main class="container text-center">
+        <div class="row">
+            <div class="card col" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">My Phone Number</h5>
+                    <p class="card-text"><i class="bi bi-telephone"></i> : +62 58175401218</p>
+                </div>
+            </div>
+
+            <div class="card col" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">My Telegram</h5>
+                    <p class="card-text"><i class="bi bi-telegram"></i> : +62 58175401218</p>
+                </div>
+            </div>
+
+            <div class="card col" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Instagram</h5>
+                    <p class="card-text"><i class="bi bi-instagram"> : dinarpriatama</i></p>
+                </div>
+            </div>
+
+            <div class="card col" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Email Address</h5>
+                    <p class="card-text"><i class="bi bi-envelope-at"></i> : dinar@gmail.com</p>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 
 </html>
