@@ -14,12 +14,13 @@
     <meta property="og:title" content="Front End Developer" />
     <meta property="og:description" content="About Front End and Its Tools" />
     
-    <!-- Icon -->
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
 </head>
 <body>
-    <header>
+    <header class="container">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <a class="navbar-brand" href="./homepage.html">
@@ -47,11 +48,13 @@
             </div>
         </nav>
     </header>
+    
     <main>
-        <article>
-            <div>
-                <h2>What is Front End Developer <i class="bi bi-patch-question"></i></h2>
-                    <p>
+        <article class="container d-flex flex-column gap-2">
+            <div class="card" style="width: 100%;">
+                <div class="card-body">   
+                    <h5 class="card-title">What is Front End Developer <i class="bi bi-patch-question"></i></h5>
+                    <p class="card-text">
                         A frontend developer is a professional who uses HTML, CSS, and JavaScript 
                         to design and build the visual and interactive elements of websites and 
                         applications that users engage with directly. They ensure the interface 
@@ -59,11 +62,13 @@
                         and interact with on a website (like buttons, menus, and animations) is 
                         created by a frontend developer.
                     </p>
+                </div>       
             </div>
             
-            <div>
-                <h2>What is the role of a Frontend Developer <i class="bi bi-patch-question"></i></h2>
-                    <p>
+            <div class="card" style="width: 100%;">
+                <div class="card-body">
+                    <h5 class="card-title">What is the role of a Frontend Developer <i class="bi bi-patch-question"></i></h5>
+                    <p class="card-text">
                         While this is not a complete frontend developer job description, 
                         the following can be considered as a great introduction to the role 
                         of a frontend developer: you'll be responsible for creating the user 
@@ -73,57 +78,77 @@
                         and project managers to make sure the final product meets the 
                         client's needs and provides the best possible experience for the end-users.
                     </p>
+                </div>
             </div>
 
-            <div>
-                <h2>Which languages are used for Frontend Development <i class="bi bi-patch-question"></i></h2>
-                    <p>
-                        <b>HTML:</b> The markup language used to create the skeleton of the page. 
-                        All the information you want to show on a webpage will be laid out through HTML.
-                    </p>
-                    <p>
-                        <b>CSS:</b> The Cascading Style Sheet language allows you to adjust the way in 
-                        which the HTML elements are rendered, improving the visuals of your webpage.
-                    </p>
-                    <p>
-                        <b>Javascript:</b> This is the de facto programming language for frontend development, 
-                        and it allows you to add dynamism to your websites/web apps. There is an alternative 
-                        known as TypeScript, which is a strongly typed superset of JavaScript that you can use instead. 
-                        However, in that scenario, you'd have to set up a transpiler to translate your code into JavaScript 
-                        before being able to run it in the browser.
-                    </p>
+            <div class="card" style="width: 100%;">
+                <div class="card-body">
+                        <h5 class="card-title">Which languages are used for Frontend Development <i class="bi bi-patch-question"></i></h5>
+                        <p class="card-text">
+                            <b>HTML:</b> The markup language used to create the skeleton of the page. 
+                            All the information you want to show on a webpage will be laid out through HTML.
+                        </p>
+                        <p class="card-text">
+                            <b>CSS:</b> The Cascading Style Sheet language allows you to adjust the way in 
+                            which the HTML elements are rendered, improving the visuals of your webpage.
+                        </p>
+                        <p class="card-text">
+                            <b>Javascript:</b> This is the de facto programming language for frontend development, 
+                            and it allows you to add dynamism to your websites/web apps. There is an alternative 
+                            known as TypeScript, which is a strongly typed superset of JavaScript that you can use instead. 
+                            However, in that scenario, you'd have to set up a transpiler to translate your code into JavaScript 
+                            before being able to run it in the browser.
+                        </p>
+                </div>
             </div>
 
-            <div>
-                <h2>What skills are required for a Frontend developer <i class="bi bi-patch-question"></i></h2>
-                <p>
-                    The main skills required to become a frontend developer are HTML, CSS, and JavaScript. 
-                    The rest are also important, but without those three basic ones, you can't apply any of the others.
-                </p>
-                <h3>The full list of frontend developer skills you should look into if you're hoping to up your game is the following:</h3>
-                <ol>
-                    <li>Understanding the core technologies: HTML, CSS & JavaScript.</li>
-                    <li>Understanding accessibility: Knowing how it can affect your users' experience.</li>
-                    <li>Version control systems: Be familiar with tools like Git.</li>
-                    <li>Responsive design: Implementing designs that adapt to different devices and screen sizes.</li>
-                    <li>User experience (UX): Understanding the basics of UX principles.</li>
-                    <li>SEO: Knowing how search engine optimization works and how you can leverage it in your code.</li>
-                    <li>RESTful APIs: Understanding the basics of RESTful APIs and how to consume them.</li>
-                    <li>Testing and debugging: Implementing testing practices and debugging effectively.</li>
-                    <li>Dev tools: Master the browser's developer tools for inspecting, debugging, and optimizing code.</li>
-                    <li>Frameworks: Having a go-to frontend framework (like React or Vue) and understanding others at a high level.</li>
-                    <li>Web performance: Understanding web performance optimizations and core web vitals.</li>
-                    <li>TypeScript: Understanding how TypeScript works and when to use it.</li>
-                </ol>
+            <div class="card" style="width: 100%;">
+                <div class="card-body">
+                    <h5 class="card-title">What skills are required for a Frontend developer <i class="bi bi-patch-question"></i></h5>
+                    <p class="card-text">
+                        The main skills required to become a frontend developer are HTML, CSS, and JavaScript. 
+                        The rest are also important, but without those three basic ones, you can't apply any of the others.
+                    </p>
+                    <h6>The full list of frontend developer skills you should look into if you're hoping to up your game is the following:</h6>
+                    <ol>
+                        <li>Understanding the core technologies: HTML, CSS & JavaScript.</li>
+                        <li>Understanding accessibility: Knowing how it can affect your users' experience.</li>
+                        <li>Version control systems: Be familiar with tools like Git.</li>
+                        <li>Responsive design: Implementing designs that adapt to different devices and screen sizes.</li>
+                        <li>User experience (UX): Understanding the basics of UX principles.</li>
+                        <li>SEO: Knowing how search engine optimization works and how you can leverage it in your code.</li>
+                        <li>RESTful APIs: Understanding the basics of RESTful APIs and how to consume them.</li>
+                        <li>Testing and debugging: Implementing testing practices and debugging effectively.</li>
+                        <li>Dev tools: Master the browser's developer tools for inspecting, debugging, and optimizing code.</li>
+                        <li>Frameworks: Having a go-to frontend framework (like React or Vue) and understanding others at a high level.</li>
+                        <li>Web performance: Understanding web performance optimizations and core web vitals.</li>
+                        <li>TypeScript: Understanding how TypeScript works and when to use it.</li>
+                    </ol>
+                </div>
             </div>
 
-            <div>
-                <p>Covering these basic skills will prepare you for any type of frontend developer interview questions you might 
+            <div class="card" style="width: 100%;">
+                <p class="card-body">Covering those basic skills will prepare you for any type of frontend developer interview questions you might 
                     encounter in the future and will enhance your current role.
                 </p>
             </div>
-            
         </article>
     </main>
+
+    <div class="b-example-divider"></div>
+
+    <div class="b-example-divider"></div>
+
+    <footer class="container d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+        <span class="mb-3 mb-md-0 text-body-secondary">© 2024 Company, Inc</span>
+        </div>
+    
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-twitter"></i></a></li>
+        <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-instagram"></i></a></li>
+        <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-facebook"></i></a></li>
+        </ul>
+    </footer> 
 </body>
 </html>
