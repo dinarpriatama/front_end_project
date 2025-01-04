@@ -9,3 +9,6 @@
 
 04. Changelog Component
 - https://roadmap.sh/projects/changelog-component
+
+05. Testimonial Card
+- https://roadmap.sh/projects/testimonial-cards
