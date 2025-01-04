@@ -1,4 +1,3 @@
-/* Default (Desktop and larger screens) */
 .container .row {
   display: flex;
   flex-wrap: wrap;
@@ -6,15 +5,14 @@
   gap: 1rem;
 }
 
-/* Responsive for screens smaller than 600px */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   .container .row {
     flex-direction: column;
     align-items: center;
   }
 
   .card {
-    width: 100%; /* Full width */
+    width: 100%;
     margin-bottom: 1rem;
   }
 }

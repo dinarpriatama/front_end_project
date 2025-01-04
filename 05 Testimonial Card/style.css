@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px auto;
+    padding-top: 10px;
+    max-width: 700px;
+}
+
+.grid-container-atas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.grid-container-atas > section {
+    text-align: left;
+    padding: 5px;
+}
+
+.testimoni-1 {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.comment-1 {
+    background-color: #1e1e1e;
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    position: relative;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.comment-1::after {
+    content: '';
+    position: absolute;
+    bottom: -13px;
+    left: 2.4rem;
+    transform: translateX(-50%);
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #1e1e1e;
+}
+
+.comment-1:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+.foto-dinar {
+    height: 60px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 5px;
+    margin-left: 15px;
+}
+
+.comment-2 {
+    position: relative;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.grid-container-bawah {
+    margin-top: 10px;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.foto-cimory {
+    height: 120px;
+}
