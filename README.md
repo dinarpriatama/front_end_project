@@ -6,3 +6,6 @@
 
 03. Personal Portfolio
 - https://roadmap.sh/projects/portfolio-website
+
+04. Changelog Component
+- https://roadmap.sh/projects/changelog-component
