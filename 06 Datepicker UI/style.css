@@ -1,103 +1,77 @@
-.container {
-    display:grid;
-    grid-template-areas: 
-        "header"
-        "month-year"
-        "days-name"
-        "container-date";
-    grid-template-rows: repeat(4, auto);
-    gap: 1px;
-    background-color: #F6C794;
+* {
+    box-sizing: border-box;
     padding: 5px;
-    width: 700px;
-    height: auto;
-    margin: 20px auto;
-    align-content: start;
-    border: 1px solid #155E95;
-    border-radius: 8px;
+    margin: 2px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.container > div {
-    background-color: #FFF6B3;
-}
-
-.container > div.header {
-    grid-area: header;
-    text-align: center;
-}
-
-.container > div.month-year {
-    grid-area: month-year;
-}
-
-.container > div.days-name {
-    grid-area: days-name;
-}
-
-.container > div.container-date {
-    grid-area: container-date;
+.container {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+    box-sizing: border-box;
 }
 
 .header {
-    display:grid;
-    grid-template-columns: 4fr 1fr;
-    height:50px;
-    gap: 2px;
+    display: flex;
     align-items: center;
-    border: 1px solid #FFF6B3;
-    border-radius: 4px 4px 0 0;
-    padding: 5px
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    width: 350px;
+}
+
+.header > input {
+    border: none;
+    outline: none;
+    flex-grow: 1;
+    padding: 5px;
+}
+
+.kalender {
+    position: absolute;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 5px;
+    width: 350px;
 }
 
 .month-year {
-    display:grid;
-    grid-template-rows: 1fr;
-    height: 50px;
-    align-items: center;
-    justify-items: center;
-}
-
-.flex-month-year {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
 }
 
 .days-name {
-    display:grid;
-    grid-template-columns: repeat(7, auto);
-    height: auto;
-    gap: 5px;
-    padding: 10px;
-    align-content: center;
-    margin-bottom: 5px;
-    border: 1px solid #FFF6B3;
-    border-radius: 0 0 4px 4px;
+    display: flex;
+    border: 1px solid black;
+    justify-content: space-between;
 }
 
-.days-name > p {
-    border: 1px solid none;
-
-    padding: 10px;
-    background-color: #6A80B9;
-    font-size: 18px;
+.days-name > span {
+    width: 30px;
     text-align: center;
-
 }
 
 .container-date {
-    display: grid;
-    grid-template-columns: repeat(7,auto);
-    grid-template-rows: auto;
-    border: 1px solid none;
-    border-radius: 4px;
-    gap: 5px;
-    padding: 10px;
-    align-content: start;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .container-date > p {
-    border: 1px solid black;
-    padding: 10px;
-    background-color: #6A80B9;
+    width: 46px;
+    height: 30px;
     text-align: center;
+    line-height: 30px;
     font-size: 18px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.container-date > p:hover {
+    background-color: bisque;
+    border-radius: 50%;
 }
