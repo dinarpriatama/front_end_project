@@ -5,17 +5,20 @@
         "month-year"
         "days-name"
         "container-date";
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, auto);
     gap: 1px;
-    background-color: aqua;
-    padding: 10px;
-    width: 900px;
-    margin: 0px auto;
+    background-color: #F6C794;
+    padding: 5px;
+    width: 700px;
+    height: auto;
+    margin: 20px auto;
+    align-content: start;
+    border: 1px solid #155E95;
+    border-radius: 8px;
 }
 
 .container > div {
-    background-color: green;
-    padding: 30px;
+    background-color: #FFF6B3;
 }
 
 .container > div.header {
@@ -33,4 +36,68 @@
 
 .container > div.container-date {
     grid-area: container-date;
+}
+
+.header {
+    display:grid;
+    grid-template-columns: 4fr 1fr;
+    height:50px;
+    gap: 2px;
+    align-items: center;
+    border: 1px solid #FFF6B3;
+    border-radius: 4px 4px 0 0;
+    padding: 5px
+}
+
+.month-year {
+    display:grid;
+    grid-template-rows: 1fr;
+    height: 50px;
+    align-items: center;
+    justify-items: center;
+}
+
+.flex-month-year {
+    display: flex;
+}
+
+.days-name {
+    display:grid;
+    grid-template-columns: repeat(7, auto);
+    height: auto;
+    gap: 5px;
+    padding: 10px;
+    align-content: center;
+    margin-bottom: 5px;
+    border: 1px solid #FFF6B3;
+    border-radius: 0 0 4px 4px;
+}
+
+.days-name > p {
+    border: 1px solid none;
+
+    padding: 10px;
+    background-color: #6A80B9;
+    font-size: 18px;
+    text-align: center;
+
+}
+
+.container-date {
+    display: grid;
+    grid-template-columns: repeat(7,auto);
+    grid-template-rows: auto;
+    border: 1px solid none;
+    border-radius: 4px;
+    gap: 5px;
+    padding: 10px;
+    align-content: start;
+}
+
+.container-date > p {
+    border: 1px solid black;
+    padding: 10px;
+    background-color: #6A80B9;
+    text-align: center;
+    font-size: 18px;
 }
