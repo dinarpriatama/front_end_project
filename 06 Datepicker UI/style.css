@@ -8,7 +8,7 @@
 .container {
     position: relative;
     display: inline-block;
-    margin: 10px;
+    margin: git 10px;
     box-sizing: border-box;
 }
 
@@ -23,6 +23,7 @@
 
 .header > input {
     border: none;
+    text-align: right;
     outline: none;
     flex-grow: 1;
     padding: 5px;
